@@ -1,0 +1,40 @@
+<div class="card">
+  <div class="card__content">
+    <div class="card__content__header">
+        <div class="card__content__title">
+        <h1>Botón de Comandos</h1>
+        </div>
+        <div class="card__content__description">
+        <div>Selecciona el tipo de botón que deseas</div>
+
+        <div class="radio-buttons-container">
+
+            <div class="radio-button">
+            <input name="radio-group" id="radio2" class="radio-button__input" type="radio" (click)="elipse()">
+                <label for="radio2" class="radio-button__label">
+                    <span class="radio-button__custom"></span>
+                    Elipse
+                </label>
+            </div>
+
+            <div class="radio-button">
+            <input name="radio-group" id="radio1" class="radio-button__input" type="radio" (click)="rectangulo()">
+                <label for="radio1" class="radio-button__label">
+                    <span class="radio-button__custom"></span>
+                    Rectángulo
+                </label>
+            </div>
+            
+            <div class="radio-button">
+            <input name="radio-group" id="radio3" class="radio-button__input" type="radio" (click)="hexagono()">
+                <label for="radio3" class="radio-button__label">
+                    <span class="radio-button__custom"></span>
+                    Hexágono
+                </label>
+            </div>
+
+        </div>
+    </div>
+    <app-boton class="botonn" [data]="parentData"/>
+  </div>
+</div>
